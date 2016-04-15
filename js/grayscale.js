@@ -24,9 +24,16 @@ $(function() {
     });
 });
 
-// Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
+    // Closes the Responsive Menu on Menu Item Click
     $('.navbar-toggle:visible').click();
+
+    // Updates the page in Google Analytics tracker
+    // See: https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications
+    if (this.hash) {
+      ga('set', 'page', '/' + this.hash.substr(1));
+      ga('send', 'pageview');
+    }
 });
 
 // remove the focused state after click,
