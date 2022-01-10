@@ -1,5 +1,5 @@
-# web-sites-primosoftware-web-gh
+# primosoftware-web
 
-Public repository for http://www.primosoftware.com.
+Public repository for https://primosoftware.com.
 
 
